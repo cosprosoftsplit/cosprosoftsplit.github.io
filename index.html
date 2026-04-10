@@ -3,38 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoftSplit Links Moved</title>
-  <meta http-equiv="refresh" content="0; url=https://cosprosoftsplit.github.io/urlaubstagerechner-legal/">
-  <link rel="canonical" href="https://cosprosoftsplit.github.io/urlaubstagerechner-legal/">
+  <title>SoftSplit Support Hub</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #f6faf7;
+      background: linear-gradient(180deg, #f7fbf8 0%, #edf5f0 100%);
       color: #153629;
-      display: grid;
-      place-items: center;
       min-height: 100vh;
       margin: 0;
       padding: 24px;
     }
     main {
-      max-width: 560px;
+      max-width: 760px;
+      margin: 0 auto;
       background: white;
-      border-radius: 18px;
-      padding: 28px;
+      border-radius: 20px;
+      padding: 32px;
       box-shadow: 0 18px 40px rgba(21, 54, 41, 0.08);
+    }
+    h1 { margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      border: 1px solid rgba(21, 54, 41, 0.1);
+      border-radius: 16px;
+      padding: 20px;
+      background: #fbfdfb;
     }
     a { color: #0b6cf0; }
   </style>
 </head>
 <body>
   <main>
-    <h1>SoftSplit links have moved</h1>
-    <p>You are being redirected to the current legal and support hub.</p>
-    <p>
-      If the redirect does not start, open
-      <a href="https://cosprosoftsplit.github.io/urlaubstagerechner-legal/">the current legal site</a>.
-    </p>
+    <h1>SoftSplit Support Hub</h1>
+    <p>This site provides fallback legal and support pages for SoftSplit apps and preserves legacy links that may still exist in older App Store metadata.</p>
+    <div class="grid">
+      <section class="card">
+        <h2>Support</h2>
+        <p>General support and contact details for SoftSplit apps.</p>
+        <p><a href="/support/">Open support page</a></p>
+      </section>
+      <section class="card">
+        <h2>Privacy</h2>
+        <p>General privacy information and guidance for app-specific questions.</p>
+        <p><a href="/privacy/">Open privacy page</a></p>
+      </section>
+      <section class="card">
+        <h2>UrlaubstageRechner</h2>
+        <p>Current app-specific legal pages for UrlaubstageRechner.</p>
+        <p><a href="https://cosprosoftsplit.github.io/urlaubstagerechner-legal/">Open app legal pages</a></p>
+      </section>
+    </div>
   </main>
 </body>
 </html>
