@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OkeyMobile</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17221a;
+      --muted: #526155;
+      --felt: #0d6b4a;
+      --tile: #fff9ea;
+      --line: #d9dfd2;
+      --gold: #d99f28;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #f7f8f3;
+    }
+    header {
+      min-height: 78vh;
+      display: grid;
+      align-items: center;
+      padding: 56px 22px;
+      background:
+        linear-gradient(120deg, rgba(13, 107, 74, .92), rgba(23, 34, 26, .88)),
+        radial-gradient(circle at 18% 24%, rgba(217, 159, 40, .28), transparent 32%);
+      color: white;
+    }
+    .hero, main {
+      width: min(1060px, 100%);
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: .94;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 680px;
+      margin: 22px 0 0;
+      font-size: 21px;
+      line-height: 1.45;
+      color: rgba(255, 255, 255, .88);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid rgba(255, 255, 255, .42);
+      border-radius: 6px;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .primary {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #1b1c12;
+    }
+    main {
+      padding: 34px 22px 56px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    section {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+    p, li {
+      color: var(--muted);
+      line-height: 1.55;
+    }
+    ul { padding-left: 20px; }
+    footer {
+      padding: 24px 22px 42px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 760px) {
+      header { min-height: 72vh; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>OkeyMobile</h1>
+      <p class="lead">An offline Turkish Okey trainer for learning rules, solving rack puzzles, practicing safer discards, playing against local bots, and keeping table scores on the same device.</p>
+      <div class="actions">
+        <a class="button primary" href="privacy.html">Privacy</a>
+        <a class="button" href="support.html">Support</a>
+        <a class="button" href="terms.html">Terms</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="grid">
+      <section>
+        <h2>Private Practice</h2>
+        <p>OkeyMobile runs on device with no accounts, cloud sync, analytics, tracking, ads, or online multiplayer.</p>
+      </section>
+      <section>
+        <h2>Trainer Tools</h2>
+        <p>Study compact rule topics, solve rack arrangement puzzles, try discard drills, and review bilingual glossary entries.</p>
+      </section>
+      <section>
+        <h2>Table Companion</h2>
+        <p>Use the manual scorekeeper for physical-table rounds and export a plain-text summary when Premium is unlocked.</p>
+      </section>
+    </div>
+    <section style="margin-top: 28px;">
+      <h2>Review Posture</h2>
+      <p>Rule and terminology content is marked as a draft pending native Turkish Okey player review. OkeyMobile does not offer real-money play, virtual currency, prizes, public rankings, Game Center, chat, or official tournament/federation authority.</p>
+    </section>
+  </main>
+  <footer>Copyright 2026 SoftSplit. All rights reserved.</footer>
+</body>
+</html>
