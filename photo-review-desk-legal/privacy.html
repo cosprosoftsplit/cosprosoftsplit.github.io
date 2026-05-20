@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Photo Review Desk Privacy</title></head>
+<body>
+<h1>Photo Review Desk Privacy Notice</h1>
+<p>Photo Review Desk helps you review the photos and videos in your own Photos library and decide what to delete. Cleanup metadata stays on this device unless you explicitly export a summary via the system share sheet.</p>
+
+<h2>Data we do not collect</h2>
+<ul>
+  <li>We do not run any analytics SDK.</li>
+  <li>We do not send your photos, videos, or library metadata to any server.</li>
+  <li>We do not use third-party advertising SDKs in this version.</li>
+  <li>We do not collect contacts, location, microphone, calendar, health, or background-refresh data.</li>
+</ul>
+
+<h2>Permissions we ask for</h2>
+<ul>
+  <li><strong>Photo Library:</strong> only when you tap Start Review, to enumerate photo and video metadata. Limited library access is supported as a first-class state.</li>
+  <li><strong>Notifications:</strong> only when you turn on Monthly Cleanup Reminder in Settings.</li>
+</ul>
+
+<h2>On-device analysis</h2>
+<p>All photo and video analysis runs on this device using Apple's Photos and Vision APIs. Photo Review Desk reads asset metadata (size, creation date, media type, thumbnails, and optionally feature print vectors for similarity grouping) and stores only the local identifier and metadata reference for each candidate. Photo Review Desk does not copy your full photo files into its app container.</p>
+
+<h2>Deletion always uses the system flow</h2>
+<p>When you confirm a delete batch, Photo Review Desk calls Apple's <code>PHAssetChangeRequest.deleteAssets</code> API. iOS shows the system Photos deletion confirmation sheet. You must confirm in that system sheet before any item is removed. Photo Review Desk never silently deletes.</p>
+
+<h2>What Photo Review Desk does not do</h2>
+<p>Photo Review Desk is a private photo and video review utility. It does not free system memory. It does not clear the caches of other apps. It does not scan for malware. It does not claim to make your phone faster. It does not modify power health. It does not access files that belong to other apps. It does not delete anything without your explicit system confirmation. It does not upload your photos or videos.</p>
+
+<h2>Delete your data</h2>
+<p>Settings &rarr; Clear analysis cache removes every local cleanup record, summary, and thumbnail reference from this device. Clearing the analysis cache does not delete any item from your Photos library. Deleting the app from your device also removes any local data that has not been exported.</p>
+
+<h2>Children</h2>
+<p>Photo Review Desk is a general-purpose utility, not directed at children under 13.</p>
+
+<h2>Contact</h2>
+<p>For privacy questions email: privacy@cosmicproduction.hr</p>
+
+<p><em>Last updated: 2026-05-20. (c) Cosmic Production d.o.o.</em></p>
+</body></html>

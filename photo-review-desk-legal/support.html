@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Photo Review Desk Support</title></head>
+<body>
+<h1>Photo Review Desk Support</h1>
+
+<h2>Common questions</h2>
+
+<h3>Why does Photo Review Desk ask for Photo Library access?</h3>
+<p>Photo Review Desk reads asset metadata (size, creation date, media type) from the photos and videos you allow. The first time you tap Start Review, iOS asks how much access to give. Limited library access is supported as a first-class state &mdash; you can review only the items you choose.</p>
+
+<h3>Will Photo Review Desk delete anything by itself?</h3>
+<p>No. Every deletion is confirmed twice: first by you in Photo Review Desk, then by iOS in the system Photos deletion sheet. Photo Review Desk uses Apple's <code>PHAssetChangeRequest.deleteAssets</code> API which always shows the system dialog.</p>
+
+<h3>What if I have only a few items shared via Limited Photos access?</h3>
+<p>That works. Photo Review Desk enumerates only the items you shared. The review queues will show only those items.</p>
+
+<h3>Will Photo Review Desk make my phone faster or free system memory?</h3>
+<p>No. iOS does not allow third-party apps to free system memory, clear other apps' caches, scan for malware, or remove system files. Photo Review Desk is a Photos review utility only.</p>
+
+<h3>How is similar photo grouping done?</h3>
+<p>Photo Review Desk uses Apple's on-device Vision feature print API. Similarity is local. Items are labeled as possible duplicates because automatic grouping is not perfect &mdash; the final keep / delete decision is always yours.</p>
+
+<h3>How is the blur queue built?</h3>
+<p>Photo Review Desk applies a conservative local heuristic via Apple's CoreImage APIs. Items are labeled as possible blur. The final keep / delete decision is always yours.</p>
+
+<h3>How do I clear local cleanup records?</h3>
+<p>Settings &rarr; Clear analysis cache removes every local cleanup record, summary, and thumbnail reference from this device. Clearing the analysis cache does not delete any item from your Photos library.</p>
+
+<h3>How do I get help?</h3>
+<p>Email: support@cosmicproduction.hr</p>
+
+<p><em>Last updated: 2026-05-20. (c) Cosmic Production d.o.o.</em></p>
+</body></html>
